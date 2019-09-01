@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+input {
+  top: 283px;
+  left: 499px;
+  width: 371px;
+  height: 42px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #c2c2c2;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 25px;
+  margin-bottom: 10px;
+  display: block;
+
+  &:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+}
+
+::-webkit-input-placeholder {
+  top: 293px;
+  left: 525px;
+  width: 36px;
+
+  height: 23px;
+  text-align: left;
+  font: Regular 14px/23px Mukta;
+  letter-spacing: 0;
+  color: #cad0dc;
+  opacity: 1;
+}
+
+.btn {
+  background: 0% 0% no-repeat padding-box;
+  padding: 10px;
+  &:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  &-primary {
+    background-color: #7626ff;
+    box-shadow: 0px 10px 39px #867ff67a;
+    border-radius: 36px;
+    opacity: 1;
+    &:hover {
+      background-color: #733FFF;
+    }
+  }
+  &-light {
+    background-color: #ffffff;
+    border: 2px solid #eaeaec;
+    color: #585859;
+    border-radius: 32px;
+    opacity: 1;
+  }
+}
