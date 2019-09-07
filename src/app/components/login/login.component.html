@@ -1,20 +1,19 @@
 <div class="container">
     <div class="container-form">
         <h4>Entrar</h4>
-        <form>
-            <input type="text" placeholder="E-mail">
+        <form [formGroup]="form" (ngSubmit)="login()">
+            <input formControlName="email" type="email" placeholder="E-mail">
+
             <div class="submit-line">
-                <input type="text" [type]="bPassword ? 'password' : 'text'" placeholder="Senha" />
+                <input formControlName="password" [type]="showPassword ? 'password' : 'text'" placeholder="Senha" />
                 <button class="submit-icon" type="button" (click)="viewPassword()">
-                    <i [class]="sIcon"></i>
+                    <i [class]="icon"></i>
                 </button>
             </div>
             <p class="link">Esqueceu a senha?</p>
-            <button class="btn btn-primary" type="button" (click)="login()">Entrar</button>
+            <button class="btn btn-primary" type="submit">Entrar</button>
             <a class="link">Não tem uma conta? Cadastre-se</a>
         </form>
     </div>
     <div class="clip"><img src="../assets/images/bottom-login.png" alt=""></div>
 </div>
-
-
