@@ -1,6 +1,6 @@
 <nav class="navbar">
     <a class="navbar-brand" href="/home">
-        <img src="../assets/images/front-test-logo.png" width="30" height="30" alt="">
+        <img src="../assets/images/front-test-logo.png">
     </a>
-    <button class="btn btn-light" type="button">Logout</button>
+    <button *ngIf="router.url !== '/login'" class="btn btn-light" type="button" (click)="logout()">Logout</button>
 </nav>

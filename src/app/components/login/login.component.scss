@@ -28,6 +28,12 @@ p {
   text-transform: uppercase;
 }
 
+h4 {
+  color: #585859;
+  font-weight: bold;
+  font-size: 29px;
+}
+
 
 .submit-icon {
   position:absolute;
@@ -42,4 +48,13 @@ p {
 .submit-line {
   position: relative;
   width: 200px;
+}
+
+.clip {
+  bottom: 0%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
