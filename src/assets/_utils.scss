@@ -1,0 +1,15 @@
+$theme-colors: (
+  "primary": #7626ff,
+  "primary-dark": #867ff67a,
+  "light": #cad0dc,
+  "accent": #585859, 
+);
+
+@function color($color) {
+  @return map-get($theme-colors, $color);
+}
+
+*:focus {
+  box-shadow: 0 0 0 0 !important;
+  outline: 0 !important;
+}

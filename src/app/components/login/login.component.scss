@@ -3,4 +3,21 @@
   left: 499px;
   width: 371px;
   height: 60px;
+  align-items: left;
+}
+
+a.link {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+  color: #0077c5;
+  font-size: 16px;
+}
+
+p {
+  color: #585859;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: end;
+  text-transform: uppercase;
 }
