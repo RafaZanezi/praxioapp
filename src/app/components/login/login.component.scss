@@ -1,3 +1,5 @@
+@import '../../../assets/utils';
+
 .container .btn.btn-primary {
   top: 427px;
   left: 499px;
@@ -12,6 +14,10 @@ a.link {
   margin-top: 24px;
   color: #0077c5;
   font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    color: color("primary")
+  }
 }
 
 p {
@@ -20,4 +26,20 @@ p {
   font-weight: bold;
   text-align: end;
   text-transform: uppercase;
+}
+
+
+.submit-icon {
+  position:absolute;
+  top:6.5px; right:-160px;
+  color: color("light");
+  z-index:10;
+  border:none;
+  background:transparent;
+  outline:none;
+}
+
+.submit-line {
+  position: relative;
+  width: 200px;
 }
